@@ -1,0 +1,99 @@
+body {
+    width: 400px;
+    height: 600px;
+    font-family: Arial, sans-serif;
+    padding: 10px;
+}
+
+#content {
+    padding: 10px;
+}
+
+.player-list {
+    margin-top: 10px;
+}
+
+.player {
+    padding: 5px 0;
+}
+
+.tabs {
+    display: flex;
+    flex-direction: row;
+}
+
+.tab {
+    padding: 5px 10px;
+    cursor: pointer;
+    background-color: aliceblue;
+    border: 1px solid #ccc;
+}
+
+.sort-button {
+    padding: 5px 10px;
+    cursor: pointer;
+    background-color: aliceblue;
+    border: 1px solid #ccc;
+    width: fit-content;
+}
+
+.sort-button.selected {
+    background-color: #e2e2e2;
+}
+
+
+.draft-tab {
+    padding: 5px 10px;
+    cursor: pointer;
+    background-color: aliceblue;
+    border: 1px solid #ccc;
+    width: fit-content;
+}
+
+.draft-tab.selected {
+    background-color: #e2e2e2;
+}
+
+
+
+.tab.selected {
+    background-color: white;
+}
+
+.main-display {
+    display: flex;
+    flex-direction: row;
+}
+
+.stat {
+    padding: 5px;
+    border: 1px solid #ccc;
+    margin-right: 10px;
+}
+
+.stat:hover {
+    background-color: #f0f0f0;
+}
+
+.stat.selected {
+    background-color: #e2e2e2;
+}
+
+
+
+hr {
+    border: none;
+    border-top: 3px double #333;
+    color: #333;
+    overflow: visible;
+    text-align: center;
+    height: 5px;
+}
+
+hr::after {
+    content: var(--ruler-number);
+    background: #fff;
+    padding: 0 4px;
+    position: relative;
+    top: -9px;
+}
